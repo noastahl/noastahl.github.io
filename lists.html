@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create Lists</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #0056b3, #003f7f);
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            display: block;
+            transition: background 0.3s ease, transform 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background: linear-gradient(135deg, #0056b3, #003f7f);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            z-index: 1000;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            margin: 0;
+            padding: 0.75rem 1.5rem;
+        }
+
+        nav ul li ul li a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .container h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+
+        .container p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .container code {
+            background: #f4f4f4;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #d63384;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        video:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #333, #222);
+            color: white;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How to Create Lists</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">HTML Tutorials</a>
+                <ul>
+                    <li><a href="table.html">How to Create a Table</a></li>
+                    <li><a href="image.html">How to Add an Image</a></li>
+                    <li><a href="links.html">How to Add Links</a></li>
+                    <li><a href="lists.html">How to Create Lists</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CSS Tutorials</a>
+                <ul>
+                    <li><a href="colors.html">Styling with Colors</a></li>
+                    <li><a href="fonts.html">Using Fonts</a></li>
+                    <li><a href="margins.html">Working with Margins</a></li>
+                    <li><a href="borders.html">Styling Borders</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>How to Create Lists</h2>
+        <p>In this tutorial, you will learn how to create both ordered and unordered lists using the HTML <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags, along with the <code>&lt;li&gt;</code> tag.</p>
+        <video controls>
+            <source src="videos/how-to-create-lists.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Web Development Tutorials. Learn to code easily!</p>
+    </footer>
+</body>
+</html>
